@@ -147,7 +147,7 @@ const StudentDashboard = () => {
     return (
         <div className="min-h-screen bg-gray-50 p-6 md:p-10">
             {/* Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl mb-8">
+            <div className="bg-linear-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl mb-8">
                 <h1 className="text-3xl md:text-4xl font-black mb-2">My Academic Record</h1>
                 <p className="text-blue-100">Access your complete academic information, attendance, and payment history</p>
             </div>
@@ -236,7 +236,7 @@ const StudentDashboard = () => {
             {studentData && (
                 <div className="space-y-8">
                     {/* Student Header */}
-                    <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl">
+                    <div className="bg-linear-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl">
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                             <div className="flex items-center gap-4">
                                 <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">

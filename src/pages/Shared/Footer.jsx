@@ -19,7 +19,7 @@ const Footer = () => {
                         <h4 className="font-black text-blue-400 mb-4 uppercase tracking-wide text-sm">Location</h4>
                         <div className="space-y-3">
                             <div className="flex gap-3 text-slate-400 text-sm">
-                                <MapPin size={18} className="text-blue-400 flex-shrink-0 mt-1" />
+                                <MapPin size={18} className="text-blue-400 shrink-0 mt-1" />
                                 <div>
                                     <p className="font-bold text-white">Main Campus</p>
                                     <p>Zindabazar, Sylhet</p>
@@ -34,19 +34,19 @@ const Footer = () => {
                         <h4 className="font-black text-blue-400 mb-4 uppercase tracking-wide text-sm">Contact</h4>
                         <div className="space-y-3 text-slate-400 text-sm">
                             <div className="flex items-center gap-3">
-                                <Phone size={18} className="text-blue-400 flex-shrink-0" />
+                                <Phone size={18} className="text-blue-400 shrink-0" />
                                 <a href="tel:+8801700000000" className="hover:text-blue-400 transition">
                                     +880 17 0000 0000
                                 </a>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Mail size={18} className="text-blue-400 flex-shrink-0" />
+                                <Mail size={18} className="text-blue-400 shrink-0" />
                                 <a href="mailto:info@scsc.edu.bd" className="hover:text-blue-400 transition">
                                     info@scsc.edu.bd
                                 </a>
                             </div>
                             <div className="flex items-start gap-3">
-                                <Clock size={18} className="text-blue-400 flex-shrink-0 mt-1" />
+                                <Clock size={18} className="text-blue-400 shrink-0 mt-1" />
                                 <div>
                                     <p><strong>Mon - Fri:</strong> 8 AM - 4 PM</p>
                                     <p><strong>Sat:</strong> 8 AM - 1 PM</p>
@@ -72,8 +72,8 @@ const Footer = () => {
                         <h4 className="font-black text-blue-400 mb-3 uppercase tracking-wide text-sm">Quick Links</h4>
                         <ul className="space-y-2 text-slate-400 text-sm">
                             <li><a href="/admission" className="hover:text-blue-400 transition">Admission</a></li>
-                            <li><a href="/all-students" className="hover:text-blue-400 transition">Students</a></li>
-                            <li><a href="/teachers" className="hover:text-blue-400 transition">Teachers</a></li>
+                            <li><a href="/teacher-registration" className="hover:text-blue-400 transition">Join as Teacher</a></li>
+                            <li><a href="/teachers" className="hover:text-blue-400 transition">Our Teachers</a></li>
                         </ul>
                     </div>
                 </div>

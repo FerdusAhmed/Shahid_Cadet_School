@@ -7,6 +7,23 @@ const classOptions = [
    'Play', 'Nursery', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
 ];
 
+const tuitionFees = {
+  'Play': 1500,
+  'Nursery': 1800,
+  '1': 2000,
+  '2': 2200,
+  '3': 2400,
+  '4': 2600,
+  '5': 2800,
+  '6': 3000,
+  '7': 3200,
+  '8': 3400,
+  '9': 3600,
+  '10': 3800,
+};
+
+const admissionFee = 5000; // One-time admission fee
+
 const ageOptions = Array.from({ length: 15 }, (_, i) => i + 3); // Ages 3-17
 
 const AdmissionForm = () => {
@@ -144,9 +161,9 @@ const AdmissionForm = () => {
             : 'bg-red-50 border-red-500 text-red-700'
         }`}>
           {statusType === 'success' ? (
-            <CheckCircle size={24} className="flex-shrink-0 mt-1" />
+            <CheckCircle size={24} className="shrink-0 mt-1" />
           ) : (
-            <AlertCircle size={24} className="flex-shrink-0 mt-1" />
+            <AlertCircle size={24} className="shrink-0 mt-1" />
           )}
           <p className="font-bold text-lg">{status}</p>
         </div>
@@ -206,6 +223,20 @@ const AdmissionForm = () => {
                   <option key={opt} value={opt}>{opt}</option>
                 ))}
               </select>
+              {form.selectedClass && (
+                <div className="mt-4 space-y-3">
+                  <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                    <p className="text-sm font-bold text-blue-600">
+                      Admission Fee (One-time): <span className="text-lg">৳{admissionFee}</span>
+                    </p>
+                  </div>
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-xl">
+                    <p className="text-sm font-bold text-green-600">
+                      Monthly Tuition for Class {form.selectedClass}: <span className="text-lg">৳{tuitionFees[form.selectedClass]}</span>
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="md:col-span-2">
               <label className="block text-sm font-bold text-gray-700 mb-2">Address</label>
