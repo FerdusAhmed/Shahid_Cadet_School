@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from "react-router-dom";
 import { router } from "./Router/Router";
 import AuthProvider from "./AuthProvider/AuthProvider";
-import './index.css'
+import "./index.css"; // Ensure Tailwind is imported here
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

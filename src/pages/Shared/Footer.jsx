@@ -1,95 +1,93 @@
-import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 text-white mt-20">
+        <footer className="bg-gray-900 text-gray-300 mt-20">
             <div className="max-w-7xl mx-auto px-6 py-12">
-                {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                    {/* About */}
+
+                {/* Top Section */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                    {/* Institution Info */}
                     <div>
-                        <h3 className="text-xl font-black text-blue-400 mb-4">SCSC Portal</h3>
-                        <p className="text-slate-400 text-sm leading-relaxed">
-                            Shahid Cadet School is committed to providing quality education and developing responsible citizens.
+                        <h3 className="text-lg font-bold text-white mb-4">
+                            Shahid Cadet School
+                        </h3>
+                        <p className="text-sm leading-relaxed">
+                            Shahid Cadet School & College is dedicated to academic excellence,
+                            discipline, and character development, preparing students for a
+                            successful future.
                         </p>
                     </div>
 
-                    {/* Location */}
+                    {/* Address */}
                     <div>
-                        <h4 className="font-black text-blue-400 mb-4 uppercase tracking-wide text-sm">Location</h4>
-                        <div className="space-y-3">
-                            <div className="flex gap-3 text-slate-400 text-sm">
-                                <MapPin size={18} className="text-blue-400 shrink-0 mt-1" />
-                                <div>
-                                    <p className="font-bold text-white">Main Campus</p>
-                                    <p>Zindabazar, Sylhet</p>
-                                    <p>Bangladesh</p>
-                                </div>
+                        <h4 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+                            Address
+                        </h4>
+                        <div className="flex items-start gap-3 text-sm">
+                            <MapPin size={18} className="mt-1" />
+                            <div>
+                                <p>Zindabazar, Sylhet</p>
+                                <p>Bangladesh</p>
                             </div>
                         </div>
                     </div>
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-black text-blue-400 mb-4 uppercase tracking-wide text-sm">Contact</h4>
-                        <div className="space-y-3 text-slate-400 text-sm">
+                        <h4 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+                            Contact
+                        </h4>
+                        <div className="space-y-3 text-sm">
                             <div className="flex items-center gap-3">
-                                <Phone size={18} className="text-blue-400 shrink-0" />
-                                <a href="tel:+8801700000000" className="hover:text-blue-400 transition">
+                                <Phone size={18} />
+                                <a href="tel:+8801700000000" className="hover:text-white transition">
                                     +880 17 0000 0000
                                 </a>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Mail size={18} className="text-blue-400 shrink-0" />
-                                <a href="mailto:info@scsc.edu.bd" className="hover:text-blue-400 transition">
+                                <Mail size={18} />
+                                <a href="mailto:info@scsc.edu.bd" className="hover:text-white transition">
                                     info@scsc.edu.bd
                                 </a>
                             </div>
-                            <div className="flex items-start gap-3">
-                                <Clock size={18} className="text-blue-400 shrink-0 mt-1" />
-                                <div>
-                                    <p><strong>Mon - Fri:</strong> 8 AM - 4 PM</p>
-                                    <p><strong>Sat:</strong> 8 AM - 1 PM</p>
-                                </div>
+                        </div>
+                    </div>
+
+                    {/* Office Hours */}
+                    <div>
+                        <h4 className="text-sm font-semibold text-white mb-4 uppercase tracking-wide">
+                            Office Hours
+                        </h4>
+                        <div className="flex items-start gap-3 text-sm">
+                            <Clock size={18} className="mt-1" />
+                            <div>
+                                <p>Sunday – Thursday: 8:00 AM – 4:00 PM</p>
+                                <p>Saturday: 8:00 AM – 1:00 PM</p>
+                                <p>Friday: Closed</p>
                             </div>
                         </div>
                     </div>
 
-                    {/* Social & Quick Links */}
-                    <div>
-                        <h4 className="font-black text-blue-400 mb-4 uppercase tracking-wide text-sm">Follow Us</h4>
-                        <div className="flex gap-4 mb-6">
-                            <a href="#" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-                                <Facebook size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-                                <Twitter size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition">
-                                <Instagram size={18} />
-                            </a>
-                        </div>
-                        <h4 className="font-black text-blue-400 mb-3 uppercase tracking-wide text-sm">Quick Links</h4>
-                        <ul className="space-y-2 text-slate-400 text-sm">
-                            <li><a href="/admission" className="hover:text-blue-400 transition">Admission</a></li>
-                            <li><a href="/teacher-registration" className="hover:text-blue-400 transition">Join as Teacher</a></li>
-                            <li><a href="/teachers" className="hover:text-blue-400 transition">Our Teachers</a></li>
-                        </ul>
-                    </div>
                 </div>
 
                 {/* Divider */}
-                <div className="border-t border-slate-700 my-8"></div>
+                <div className="border-t border-gray-700 my-8"></div>
 
-                {/* Bottom Footer */}
-                <div className="flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
-                    <p>&copy; {new Date().getFullYear()} Shahid Cadet School, Sylhet. All rights reserved.</p>
+                {/* Bottom Section */}
+                <div className="flex flex-col md:flex-row justify-between items-center text-sm">
+                    <p>
+                        © {new Date().getFullYear()} Shahid Cadet School & College. All Rights Reserved.
+                    </p>
+
                     <div className="flex gap-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-blue-400 transition">Privacy Policy</a>
-                        <a href="#" className="hover:text-blue-400 transition">Terms of Service</a>
-                        <a href="/location" className="hover:text-blue-400 transition">Contact Us</a>
+                        <a href="#" className="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" className="hover:text-white transition">Terms & Conditions</a>
+                        <a href="/contact" className="hover:text-white transition">Contact</a>
                     </div>
                 </div>
+
             </div>
         </footer>
     );
