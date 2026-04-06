@@ -3,7 +3,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthContext/AuthContext";
 import { toast } from "react-toastify";
-import logoimg from '../../assets/NS1.png'
+import logoimg from '../../assets/logo.png'
 import {
   LayoutDashboard,
   LogIn,

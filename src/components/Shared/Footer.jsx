@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, Twitter, ArrowRight } from "lucide-react";
-import logoimg from '../../assets/NS1.png';
+import logoimg from '../../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,7 +35,7 @@ const Footer = () => {
                 <img className="w-full h-full object-cover" src={logoimg} alt="Nexus School Logo" />
               </div>
               <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-                Nexus School
+                SHAHID CADET ACADEMY
               </span>
             </Link>
             <p className="text-slate-500 text-sm leading-relaxed">
@@ -128,7 +128,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-slate-100">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} <span className="font-semibold text-slate-600">Nexus School</span>. All rights reserved.
+              © {currentYear} <span className="font-semibold text-slate-600">SHAHID CADET ACADEMY</span>. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-sm">
               <Link to="/privacy" className="text-slate-400 hover:text-indigo-600 transition-colors">Privacy Policy</Link>

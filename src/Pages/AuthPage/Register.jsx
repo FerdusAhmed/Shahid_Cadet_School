@@ -97,7 +97,7 @@ const Register = () => {
       <div className="card bg-base-100 w-full max-w-md shadow-2xl border border-base-200 overflow-hidden">
         <div className="bg-linear-to-r from-blue-600 to-cyan-500 p-8 text-center text-white">
           <h3 className="text-3xl font-black tracking-tight mb-2">
-            Nexus-School
+            SHAHID CADET ACADEMY
           </h3>
           <p className="text-blue-50 opacity-90 font-medium">
             Register in your school
