@@ -1,12 +1,59 @@
 @import "tailwindcss";
-.input {
-  @apply w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition;
+@plugin "daisyui";
+
+/* Default theme */
+:root {
+  color-scheme: light;
 }
 
-.label {
-  @apply block text-gray-700 font-semibold mb-1;
+/* Section utility */
+.section-res {
+  @apply md:max-w-7xl mx-auto px-4 w-full;
 }
 
-.section-title {
-  @apply text-lg font-bold text-gray-800 border-l-4 border-purple-600 pl-3 mb-4;
+/* ============================= */
+/* Custom Dark Theme - nexusdark */
+/* ============================= */
+
+[data-theme="nexusdark"] {
+  color-scheme: dark;
+
+  --p: 243 75% 59%;
+  --pf: 243 75% 49%;
+
+  --s: 187 100% 42%;
+  --sf: 187 100% 32%;
+
+  --a: 160 84% 39%;
+  --af: 160 84% 29%;
+
+  --n: 222 47% 11%;
+  --nf: 222 47% 21%;
+
+  --b1: 222 47% 8%;
+  --b2: 222 47% 12%;
+  --b3: 222 47% 16%;
+
+  --bc: 210 40% 98%;
+
+  --in: 198 93% 60%;
+  --su: 158 64% 52%;
+  --wa: 43 96% 56%;
+  --er: 0 91% 71%;
+
+  --rounded-box: 1rem;
+  --rounded-btn: 0.75rem;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    filter: invert(1); 
+    opacity: 0.5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
 }
